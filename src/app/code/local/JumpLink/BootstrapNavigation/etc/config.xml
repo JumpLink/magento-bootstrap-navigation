@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<JumpLink_BootstrapNavigation>
+			<version>0.0.0.1</version>
+		</JumpLink_BootstrapNavigation>
+	</modules>
+	<global>
+		<blocks>
+			<bootstrapnavigation>
+				<class>JumpLink_BootstrapNavigation_Block</class>
+			</bootstrapnavigation>
+			<page>
+				<rewrite>
+					<html_topmenu>JumpLink_BootstrapNavigation_Block_Page_Html_Topmenu</html_topmenu>
+				</rewrite>
+			</page>
+		</blocks>
+	</global>
+	<frontend>
+		<layout>
+			<updates>
+				<bootstrapnavigation>
+					<!-- Here, we define the foo_bar handle for our layout update XML -->
+					<!-- This file's base directory is app/design/frontend/base/default/layout -->
+					<!-- We also put bar.xml in it's own 'foo' directory to separate our code from core -->
+					<file>jumplink_bootstrapnavigation.xml</file>
+				</bootstrapnavigation>
+			</updates>
+		</layout>
+	</frontend>
+</config>
